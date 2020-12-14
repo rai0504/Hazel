@@ -4,6 +4,9 @@
     <Filter Include="hazel">
       <UniqueIdentifier>{B939900F-254E-B8C0-EECF-5B205AA3B4F1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="hazel\events">
+      <UniqueIdentifier>{9DAFA367-8912-330C-3298-6BC21EDAFE8E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\hazel.h" />
@@ -18,6 +21,18 @@
     </ClInclude>
     <ClInclude Include="src\hazel\entrypoint.h">
       <Filter>hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\applicationevent.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\event.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\keyevent.h">
+      <Filter>hazel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\events\mouseevent.h">
+      <Filter>hazel\events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
