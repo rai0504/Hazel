@@ -35,6 +35,8 @@
       <Filter>hazel\events</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\hazel\window.h" />
+    <ClInclude Include="src\platform\windows\winwindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>hazel</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
+    <ClCompile Include="src\platform\windows\winwindow.cpp" />
   </ItemGroup>
 </Project>

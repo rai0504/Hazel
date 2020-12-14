@@ -2,6 +2,10 @@
 
 #include "Hazel/core.h"
 
+// THIS STUFF WAS NOT HERE- I ADDE IT TO MAKE IT COMPILE
+#include <string>
+#include <functional>
+
 namespace Hazel {
 
 	// Events in Hazel are currently blocking, meaning when an event occurs it
@@ -43,7 +47,7 @@ namespace Hazel {
 		virtual int GetCategoryFlags() const = 0;
 		virtual std::string ToString() const { return GetName(); }
 
-		inline bool IsInCategory(EventCategory category)
+		bool IsInCategory(EventCategory category)
 		{
 			return GetCategoryFlags() & category;
 		}
