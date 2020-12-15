@@ -40,7 +40,7 @@ namespace Hazel {
 	class HAZEL_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
-		KeyReleasedEvent(int keycode, int repeatcount)
+		KeyReleasedEvent(int keycode)
 			: KeyEvent(keycode) {}
 
 

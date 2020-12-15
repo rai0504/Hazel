@@ -2,7 +2,7 @@
 
 #include "Hazel/core.h"
 
-// THIS STUFF WAS NOT HERE- I ADDE IT TO MAKE IT COMPILE
+// THIS STUFF WAS NOT HERE- I ADDED IT TO MAKE IT COMPILE
 #include <string>
 #include <functional>
 
