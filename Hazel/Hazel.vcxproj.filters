@@ -7,10 +7,22 @@
     <Filter Include="hazel\events">
       <UniqueIdentifier>{9DAFA367-8912-330C-3298-6BC21EDAFE8E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\windows">
+      <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\hazel.h" />
     <ClInclude Include="src\hazel\Application.h">
+      <Filter>hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\Layer.h">
+      <Filter>hazel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hazel\LayerStack.h">
       <Filter>hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hazel\Log.h">
@@ -34,18 +46,30 @@
     <ClInclude Include="src\hazel\events\mouseevent.h">
       <Filter>hazel\events</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\window.h">
+      <Filter>hazel</Filter>
+    </ClInclude>
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\hazel\window.h" />
-    <ClInclude Include="src\platform\windows\winwindow.h" />
+    <ClInclude Include="src\platform\windows\winwindow.h">
+      <Filter>platform\windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp">
+      <Filter>hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hazel\Layer.cpp">
+      <Filter>hazel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hazel\LayerStack.cpp">
       <Filter>hazel</Filter>
     </ClCompile>
     <ClCompile Include="src\hazel\Log.cpp">
       <Filter>hazel</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
-    <ClCompile Include="src\platform\windows\winwindow.cpp" />
+    <ClCompile Include="src\platform\windows\winwindow.cpp">
+      <Filter>platform\windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -109,6 +110,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,6 +137,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -151,6 +154,8 @@
   <ItemGroup>
     <ClInclude Include="src\hazel.h" />
     <ClInclude Include="src\hazel\Application.h" />
+    <ClInclude Include="src\hazel\Layer.h" />
+    <ClInclude Include="src\hazel\LayerStack.h" />
     <ClInclude Include="src\hazel\Log.h" />
     <ClInclude Include="src\hazel\core.h" />
     <ClInclude Include="src\hazel\entrypoint.h" />
@@ -164,6 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp" />
+    <ClCompile Include="src\hazel\Layer.cpp" />
+    <ClCompile Include="src\hazel\LayerStack.cpp" />
     <ClCompile Include="src\hazel\Log.cpp" />
     <ClCompile Include="src\hzpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
