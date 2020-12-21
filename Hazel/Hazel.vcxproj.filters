@@ -53,6 +53,8 @@
     <ClInclude Include="src\platform\windows\winwindow.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\imgui\imguilayer.h" />
+    <ClInclude Include="src\platform\opengl\imgui_opengl_renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp">
@@ -71,5 +73,7 @@
     <ClCompile Include="src\platform\windows\winwindow.cpp">
       <Filter>platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\hazel\imgui\imguilayer.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
   </ItemGroup>
 </Project>
