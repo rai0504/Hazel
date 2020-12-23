@@ -1,5 +1,6 @@
 workspace "Hazel"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -16,9 +17,12 @@ IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 IncludeDir["Glad"] = "Hazel/vendor/Glad/include"
 IncludeDir["Imgui"] = "Hazel/vendor/imgui"
 
-include "Hazel/vendor/GLFW"
-include "Hazel/vendor/Glad"
-include "Hazel/vendor/imgui"
+group "Dependencies"
+	include "Hazel/vendor/GLFW"
+	include "Hazel/vendor/Glad"
+	include "Hazel/vendor/imgui"
+group ""
+
 
 project "Hazel"
 	location "Hazel"
@@ -68,23 +72,23 @@ project "Hazel"
 
 		postbuildcommands
 		{
-			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
+			("{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputdir .. "/Sandbox/\"")
 		}
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
 		runtime "Debug"
-		symbols "on"
+		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
 		runtime "Release"
-		optimize "on"
+		optimize "On"
 
 		filter "configurations:Dist"
 		defines "HZ_DIST"
 		runtime "Release"
-		optimize "on"
+		optimize "On"
 
 project "Sandbox"
 	location "Sandbox"
@@ -124,14 +128,14 @@ project "Sandbox"
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
 		runtime "Debug"
-		symbols "on"
+		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
 		runtime "Release"
-		optimize "on"
+		optimize "On"
 
 		filter "configurations:Dist"
 		defines "HZ_DIST"
 		runtime "Release"
-		optimize "on"
+		optimize "On"
