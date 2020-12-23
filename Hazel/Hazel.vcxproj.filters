@@ -7,8 +7,14 @@
     <Filter Include="hazel\events">
       <UniqueIdentifier>{9DAFA367-8912-330C-3298-6BC21EDAFE8E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="hazel\imgui">
+      <UniqueIdentifier>{E3ED3849-4FA3-B13E-D897-AB15444CA842}</UniqueIdentifier>
+    </Filter>
     <Filter Include="platform">
       <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\opengl">
+      <UniqueIdentifier>{9E4DBFD0-0AD9-2C95-13EA-AF897FF48895}</UniqueIdentifier>
     </Filter>
     <Filter Include="platform\windows">
       <UniqueIdentifier>{A44FC440-9048-E392-B97A-C817A5D2C29E}</UniqueIdentifier>
@@ -46,15 +52,19 @@
     <ClInclude Include="src\hazel\events\mouseevent.h">
       <Filter>hazel\events</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\imgui\imguilayer.h">
+      <Filter>hazel\imgui</Filter>
+    </ClInclude>
     <ClInclude Include="src\hazel\window.h">
       <Filter>hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
+    <ClInclude Include="src\platform\opengl\imgui_opengl_renderer.h">
+      <Filter>platform\opengl</Filter>
+    </ClInclude>
     <ClInclude Include="src\platform\windows\winwindow.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
-    <ClInclude Include="src\hazel\imgui\imguilayer.h" />
-    <ClInclude Include="src\platform\opengl\imgui_opengl_renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp">
@@ -69,11 +79,15 @@
     <ClCompile Include="src\hazel\Log.cpp">
       <Filter>hazel</Filter>
     </ClCompile>
+    <ClCompile Include="src\hazel\imgui\imguilayer.cpp">
+      <Filter>hazel\imgui</Filter>
+    </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
+    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp">
+      <Filter>platform\opengl</Filter>
+    </ClCompile>
     <ClCompile Include="src\platform\windows\winwindow.cpp">
       <Filter>platform\windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\hazel\imgui\imguilayer.cpp" />
-    <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
   </ItemGroup>
 </Project>
