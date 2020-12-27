@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="src\hazel.h" />
     <ClInclude Include="src\hazel\Application.h" />
+    <ClInclude Include="src\hazel\input.h" />
     <ClInclude Include="src\hazel\Layer.h" />
     <ClInclude Include="src\hazel\LayerStack.h" />
     <ClInclude Include="src\hazel\Log.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="src\hazel\window.h" />
     <ClInclude Include="src\hzpch.h" />
     <ClInclude Include="src\platform\opengl\imgui_opengl_renderer.h" />
+    <ClInclude Include="src\platform\windows\wininput.h" />
     <ClInclude Include="src\platform\windows\winwindow.h" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +178,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="src\platform\opengl\imgui_opengl_renderer.cpp" />
+    <ClCompile Include="src\platform\windows\wininput.cpp" />
     <ClCompile Include="src\platform\windows\winwindow.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -65,6 +65,8 @@
     <ClInclude Include="src\platform\windows\winwindow.h">
       <Filter>platform\windows</Filter>
     </ClInclude>
+    <ClInclude Include="src\hazel\input.h" />
+    <ClInclude Include="src\platform\windows\wininput.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\hazel\Application.cpp">
@@ -89,5 +91,6 @@
     <ClCompile Include="src\platform\windows\winwindow.cpp">
       <Filter>platform\windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform\windows\wininput.cpp" />
   </ItemGroup>
 </Project>
