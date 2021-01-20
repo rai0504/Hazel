@@ -152,6 +152,7 @@
     <ClInclude Include="src\hazel.h" />
     <ClInclude Include="src\hazel\Application.h" />
     <ClInclude Include="src\hazel\input.h" />
+    <ClInclude Include="src\hazel\keycodes.h" />
     <ClInclude Include="src\hazel\Layer.h" />
     <ClInclude Include="src\hazel\LayerStack.h" />
     <ClInclude Include="src\hazel\Log.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="src\hazel\events\keyevent.h" />
     <ClInclude Include="src\hazel\events\mouseevent.h" />
     <ClInclude Include="src\hazel\imgui\imguilayer.h" />
+    <ClInclude Include="src\hazel\mousebuttoncodes.h" />
     <ClInclude Include="src\hazel\window.h" />
     <ClInclude Include="src\hzpch.h" />
     <ClInclude Include="src\platform\opengl\imgui_opengl_renderer.h" />
